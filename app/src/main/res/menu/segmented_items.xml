@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/toggle_month"
+        android:title="@string/seg_month" />
+
+    <item
+        android:id="@+id/toggle_week"
+        android:title="@string/seg_week"/>
+
+    <item
+        android:id="@+id/toggle_day"
+        android:title="@string/seg_day"/>
+</menu>

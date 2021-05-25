@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="Suspicious0dp,UselessParent">
+        <include layout="@layout/fragment_dashboard"/>
+    </FrameLayout>
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:padding="6dp"
+        app:bnc_mode="packed">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/gray"
+            app:bt_icon="@drawable/ic_dashboard"
+            app:bt_title="Dashboard" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shapeColor="@color/secondaryColor"
+            app:bt_active="false"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/gray"
+            app:bt_icon="@drawable/ic_equalizer"
+            app:bt_title="Phone usage" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/gray"
+            app:bt_icon="@drawable/ic_shield"
+            app:bt_title="Parental control" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/gray"
+            app:bt_icon="@drawable/ic_share"
+            app:bt_title="Social media" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_alerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/gray"
+            app:bt_icon="@drawable/ic_notification"
+            app:bt_title="Alerts" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+</LinearLayout>

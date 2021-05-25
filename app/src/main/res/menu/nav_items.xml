@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:checked="true"
+        android:id="@+id/dashboard_fragment"
+        android:title="@string/dashboard_menu_str"
+        android:icon="@drawable/ic_dashboard"
+        android:color="@color/primaryColor"/>
+    <item
+        android:id="@+id/phone_usage_fragment"
+        android:title="@string/phone_usage_menu_str"
+        android:icon="@drawable/ic_equalizer"
+        android:color="@color/primaryColor"/>
+    <item
+        android:id="@+id/parental_control_fragment"
+        android:title="@string/parental_control_menu_str"
+        android:icon="@drawable/ic_shield"
+        android:color="@color/primaryColor"/>
+    <item
+        android:id="@+id/social_media_fragment"
+        android:title="@string/social_media_menu_str"
+        android:icon="@drawable/ic_share"
+        android:color="@color/primaryColor"/>
+    <item
+        android:id="@+id/alerts_fragment"
+        android:title="@string/alerts_menu_str"
+        android:icon="@drawable/ic_notification"
+        android:color="@color/primaryColor" />
+</menu>
